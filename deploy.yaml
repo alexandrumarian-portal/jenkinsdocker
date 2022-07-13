@@ -39,4 +39,3 @@
 
     - name: start/run the container based on jenkins_m image built in the previous command
       ansible.builtin.shell: sudo docker run --restart=on-failure --volume /opt/jenkins-data:/var/jenkins_home -d -p 8080:8080 jenkins_m
-marian@lxc:~/airbus$
